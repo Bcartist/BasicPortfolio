@@ -26,9 +26,6 @@ min-height: auto;
      margin: auto;
 }
 
-body { 
-}
-
  h1 {
     color:black; 
     letter-spacing: 2;
@@ -38,12 +35,12 @@ body {
 letter-spacing: 4px;
 font-family: monospace;
 font-size: 30px;
-position: sticky;
+position: relative;
  }
 
 p {
     color: black;
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 ul{
@@ -65,7 +62,7 @@ ul{
  }
 
  button:hover {
-opacity: 0.8;
+     font-size: small;
  }
 
  a{
@@ -75,14 +72,13 @@ transition-duration: 0.4s;
 
  li a:hover{
      opacity: 0.8;
-     color: beige;
+     color: red;
  }
 
  section {
      padding: 25px;
      margin:0 auto;
-     box-sizing: content-box;
-     position: relative;
+     box-sizing:content-box;
      top: 35px;
  }
  
@@ -95,21 +91,18 @@ transition-duration: 0.4s;
      transition-duration: .4s;
  }
 
+#intro , #projects ,
+#about_me {
+position: relative;
+
+}
+
  #buttonlink {
      text-decoration: none;
      color: black;
      transition-duration: .4s;
- }
+    }
  
- #buttonlink:hover {
-     color: red;
- }
-
- #intro,
- #projects , #about_me {
-position: sticky;
- }
-  
 
  .logo {
      letter-spacing: 4px;
@@ -128,5 +121,18 @@ position: sticky;
      font-size: 12px;
  }
 
-
+#git_hub {
+    border: none;
+    padding: 20px;
+    height: 70px;
+    background-image: url(https://d29fhpw069ctt2.cloudfront.net/icon/image/38304/preview.svg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+}
+ 
+#git_hub:hover {
+    background-size: 85%;
+    cursor: pointer;
+}
  
