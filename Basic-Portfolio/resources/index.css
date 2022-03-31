@@ -1,25 +1,25 @@
 * {
-text-align: center;
-background-color: whitesmoke;
-font-family: monospace;
-color: black;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: monospace;
+    color: black;
 }
 
 nav {
-position: fixed;
-width: 100%;
-padding: 0px;
-top: 0;
-z-index: 1;
-font-family: monoscpace;
-font-size: 20px;
-letter-spacing: 2;
-color: black;
-background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    top: 0;
+    z-index: 1;
+    font-family: monoscpace;
+    font-size: 20px;
+    letter-spacing: 2;
+    color: black;
+    background-color: whitesmoke;
 }
     
 html {
-min-height: auto;
+     min-height: auto;
      max-height: 800px;
      min-width: auto;
      max-width: 500px;
@@ -32,10 +32,10 @@ min-height: auto;
  }
 
  h3 {
-letter-spacing: 4px;
-font-family: monospace;
-font-size: 30px;
-position: relative;
+    letter-spacing: 4px;
+    font-family: monospace;
+    font-size: 30px;
+    position: relative;
  }
 
 p {
@@ -66,8 +66,8 @@ ul{
  }
 
  a{
-     text-decoration: none;
-transition-duration: 0.4s;
+    text-decoration: none;
+    transition-duration: 0.4s;
  }
 
  li a:hover{
@@ -93,8 +93,7 @@ transition-duration: 0.4s;
 
 #intro , #projects ,
 #about_me {
-position: relative;
-
+    position: relative;
 }
 
  #buttonlink {
@@ -103,7 +102,6 @@ position: relative;
      transition-duration: .4s;
     }
  
-
  .logo {
      letter-spacing: 4px;
      font-weight: lighter;
@@ -112,7 +110,7 @@ position: relative;
 
  .pfp{
      border-radius: 10px;
-    padding: auto 15px;
+     padding: auto 15px;
  }
 
  .search {
