@@ -3,24 +3,32 @@
   <head>
     <title> Very Basic Portfolio </title> 
     <link href="resources\index.css" type="text/css" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Monofett&display=swap" rel="stylesheet">
+  </head>
+
+
   <body> 
       <!--this is my fixed navigation bar-->
       <nav>
           <ul class="navbar">
+            <!--this is the logo-->
             <li><strong class="logo">BASIC</strong></li>
             <li><a href="#intro">Home</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#about_me">About me</a></li>
-          <li><input class="search" type="text" placeholder="Search..."><button type="submit"></button></li>
+              <li><a href="#about_me">About Me</a></li>
+              <li><a href="#Cheat_Sheet">CheatSheet</a></li>
+          <li><input class="search" type="text" placeholder="Search..."><input class="submit" type="submit"></li>
             </ul>
             <!--search bar is just decoration right now-->
       </nav>
-    
-      <section id="intro">
+      <section  id="intro">
         <div class="title">
-          <h3 >Welcome to my Site</h3>
+          <h3>Welcome to my Site</h3>
         </div>
+
+        
     <h1> This is just the Start </h1> 
     <article>
     <p>I will be using this an a portfolio for what I have learned. I started my journey into the world of tech
@@ -31,43 +39,93 @@
     </p>
   </article>
   </section>
-  <!--This is going to be my project folder with examples-->
 
-    <section id="projects">
-      <h1>Projects</h1>
-      <article>
-    <p>The first project I implemented a link tree onto my personal art portfolio website.
-       The idea was given to me by my collaborator and I wanted to do it myself before asking for help. 
-       A great thing this coding this has taught me is to be more confident in my own skill. Although
-       I have only been studying for two weeks, I was able to create a simple link tree that fit the theme
-       of my site without any help. My collaborator did send me his code to study and he has showed me that 
-       I can start putting what I learn into pratice. Doing is the best way for someone like me to learn , I 
-       have always been a visual learner.
-      <br><br>
-      <button id="buttonlink"><a href="http://www.verybacic.com/linktree" target="_blank" >Click Here to see my First Project</a></button>
-      <button id="git_hub"><a href="https://github.com/Bcartist/SiteCode" target="_blank"> Code </a></button>
-    </p>
-</article>
+  <!--This is going to be my project folder with examples-->
+  <section id="projects">
+    <h1>Projects</h1>
+    <article>
+      <div class="boxone">
+        <img src="https://i.ibb.co/9rZSSJV/linktree-SC.png" alt="Image of Site" height="150"  class="projectone"> 
+        <button id="buttonlink"><a href="http://www.verybacic.com/linktree" target="_blank" >Live Site </a></button>
+        <button id="git_hub"><a href="https://github.com/Bcartist/SiteCode" target="_blank"> Code </a></button>
+        <p><em>Implemented a Link Tree onto a page on SquareSpace </em>
+        <br>using HTML and Internal CSS </p>
+      </div>
+    </article>
   </section>
   
+
   <section id="about_me">
     <h1> This is Me </h1>
     <figure>
-    <img src="https://i.ibb.co/vcJ7Swk/IMG-1310.jpg" alt="Briana" width="200" height="auto" class="pfp">
+      <img src="https://i.ibb.co/vcJ7Swk/IMG-1310.jpg" alt="Briana" width="300" height="auto" class="pfp">
     </figure>
-    <p>
-      <em>I am A 22 year old Self-Taught Artist , that is just entering the world of tech
-      to pivot into a new career. I probably have so many typos within this site , as you can 
-       tell writing isn't my strong suit.</em> 
+      <article class="overlay"> 
+        <p class="text"><em>I am A 22 year old Self-Taught Artist , that is just entering the world of tech
+        to pivot into a new career. I probably have so many typos within this site , as you can 
+        tell writing isn't my strong suit.</em></p>
+      </article> 
+  </section>
+
+  <section id="Cheat_Sheet">
+      <h3>What I've Learned</h3>
+      <br><br> 
+      <article>
+      <h1>Banners</h1>  
+      <p>Theres so many things you can do with a banner. It can display a gallery of images
+      ,solid color, have a logo or have a button to redirect you to a different part of the page.
+      I'm going to show some example banners below and the code I used to create it.
+      <!--These are examples of different style banners-->
+        <banner>
+        <table width='100%' cellspacing=0 cellpadding=0>
+          <tr class="exone">
+          <td class="leftone"><p>This banner has an image</p></td>
+          <td class="rightone"><p>This banner is more transparent</p></td>
+          </tr>  
+          <tr class="code">
+            <td><p>Background-image: url();</p></td>
+            <td><p>
+              opacity: #;
+              </p></td>
+          </tr>
+          <tr>
+            <td class="lefttwo"><p>This banner has a shadow</p> </td>
+            <td class="righttwo"><p>This banner has a border</p></td>
+          </tr>
+          <tr class="code">
+            <td><p>Box-Shadow: offset-x offset-y blur-radius color;</p></td>
+            <td><p>
+              border: # style color;
+              border-radius: #;
+              </p></td>
+          </tr>
+        </table>
+        </banner>
       </p>
-   </section>
-   
-    <!--This is the footer added a link that jumps to the start of the page , it does not work porperly once 
-    I used position:sticky for Sections-->
-  
+    </article>
+    <br><br>
+    <article>
+      <h1>HTML Input Types and CSS Forms</h1>
+      <p>This concept was a little harder for me to grasp because theres so many different types of inputs and each are used 
+        in certain occasions. Theres actually a form being used in the Navigation bar called input type="search" and input 
+        type="submit". 
+        <br>
+        <input type="checkbox"> 
+        <br>
+        <input type="color">
+        <br>
+        <input type="radio">
+        <br>
+        <input type="range">
+      </p>
+    </article>
+  </section>
+
+  <!--This is the footer added a link that jumps to the start of the page , it does not work porperly once 
+  I used position:sticky-->
   <footer>
     <p><a href="#intro">Jump To the Top</a></p>
   </footer>
 
-</body>
+  </body>
 </html>
