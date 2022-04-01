@@ -1,39 +1,38 @@
+/* font-family: 'Cutive Mono', monospace;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Monofett', cursive;*/
+
 * {
-    text-align: center;
-    background-color: whitesmoke;
-    font-family: monospace;
     color: black;
+    font-family: 'Cutive Mono', monospace;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    padding: 0px;
     top: 0;
     z-index: 1;
-    font-family: monoscpace;
     font-size: 20px;
     letter-spacing: 2;
     color: black;
-    background-color: whitesmoke;
+    background-color: white;
 }
     
 html {
      min-height: auto;
      max-height: 800px;
      min-width: auto;
-     max-width: 500px;
+     max-width: 800px;
      margin: auto;
 }
 
- h1 {
+h1 {
     color:black; 
     letter-spacing: 2;
  }
 
- h3 {
+h3 {
     letter-spacing: 4px;
-    font-family: monospace;
     font-size: 30px;
     position: relative;
  }
@@ -43,94 +42,186 @@ p {
     box-sizing: border-box;  
 }
 
-ul{
-    background-color: whitesmoke;
-}
-
- li{
+li{
      list-style-type: none;
      float: left;
      padding: 10px;
  }
 
- button {
+button {
      border-radius: 10px;
      padding: 5px;
+     margin: 10px;
      border-color: black;
-     background-color: whitesmoke;
      transition-duration: 0.3s;
+     background-color: white;
  }
 
- button:hover {
-     font-size: small;
- }
+a{
+     text-decoration: none;
+     transition-duration: 0.4s;
+}
 
- a{
-    text-decoration: none;
-    transition-duration: 0.4s;
- }
-
- li a:hover{
+li a:hover{
      opacity: 0.8;
      color: red;
- }
+}
 
- section {
+section {
      padding: 25px;
      margin:0 auto;
-     box-sizing:content-box;
-     top: 35px;
- }
+     background-color: rgba(255, 255, 255, 0.1);
+     text-align: center;
+}
  
- footer {
+footer {
      bottom:30px;
      position: sticky;
      border-radius: 12px;
      float: right;
      padding: 10px;
-     transition-duration: .4s;
- }
-
-#intro , #projects ,
-#about_me {
-    position: relative;
+     background-color: whitesmoke;
+     opacity: .8;
 }
 
- #buttonlink {
-     text-decoration: none;
-     color: black;
-     transition-duration: .4s;
-    }
- 
- .logo {
+.title {
+    margin: 100px 0px;
+}
+
+.logo {
      letter-spacing: 4px;
      font-weight: lighter;
      font-size: 25px;
- }
-
- .pfp{
+}
+ 
+.pfp, .projectone {
      border-radius: 10px;
      padding: auto 15px;
- }
+}
 
- .search {
+.projectone {
+     box-shadow: 5px 5px 10px gray;
+}
+
+.search, .submit {
      border-radius: 12px;
      padding: 5px;
      font-size: 12px;
- }
+}
+ 
+.submit {
+     border-style: none;
+     margin-left: 5px;
+     background-color: darkgrey;
+     color: white;
+     opacity: 0.7;
+     transition-duration: .4s;
+}
+ 
+.submit:hover {
+     opacity: 1;
+} 
+
+.exone {
+    align-content: center;
+}
+
+.leftone , .rightone ,
+.lefttwo , .righttwo {
+    padding: 5px;
+}
+
+.leftone {
+  background-image: url(https://picjumbo.com/wp-content/uploads/white-crumpled-paper-background-free-photo-2210x1290.jpg);  
+}
+
+.rightone {
+    opacity: 0.5;
+    }
+
+.lefttwo {
+    box-shadow: 10px 10px 10px grey;
+}
+
+.righttwo {
+    border: 2px outset grey;
+    border-radius: 10px;
+}    
+
+.code{
+    font-weight:bold;
+}
 
 #git_hub {
     border: none;
     padding: 20px;
-    height: 70px;
+    height: 60px;
+    left: 20px;
+    bottom: 35px;
+    position: relative;
     background-image: url(https://d29fhpw069ctt2.cloudfront.net/icon/image/38304/preview.svg) ;
     background-position: center;
     background-repeat: no-repeat;
-    transition-duration: 0.5s;
+    background-size: 80%;
+    transition-duration: 0.8s ease;
 }
  
 #git_hub:hover {
-    background-size: 85%;
-    cursor: pointer;
+    background-size: 90%;
+    font-size: 90%;
 }
- 
+
+#intro , #projects ,
+#about_me , #Cheat_Sheet{
+     line-height: 25px;
+}
+
+#buttonlink {
+     text-decoration: none;
+     color: black;
+     transition-duration: 0.8s ease;
+     padding: 8px 15px;
+     position: absolute;
+}
+
+#buttonlink:hover {
+     font-size: 95%;
+}
+
+#about_me {
+    position: relative;
+    width: 70%;     
+}
+
+.pfp {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .6s ease;
+    background-color: whitesmoke;
+}
+
+.overlay:hover , #about_me:hover {
+     opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
