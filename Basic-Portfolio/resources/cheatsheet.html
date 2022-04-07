@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    
+    <!--Imported fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Monofett&display=swap" rel="stylesheet">
+    <title>CheatSheet</title>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+    <nav>
+        <ul class="navbar">
+          <!--this is the logo-->
+          <li><strong class="logo">BASIC</strong></li>
+          <li><a href="../index.html#intro">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#about_me">About Me</a></li>
+            <li><a href="cheatsheet.html">CheatSheet</a></li>
+        <li><input class="search" type="text" placeholder="Search..."><input class="submit" type="submit"></li>
+          </ul>
+          <!--search bar is just decoration right now-->
+    </nav>
+      <ul class="breadcrumb">
+        <li class="location"><a href=".banners">Banners</a></li>
+        <li class="location"><a href=".forms">CSS Forms and Inputs</a></li>
+      </ul>
+    <section id="Cheat_Sheet">
+        <h3>What I've Learned</h3>
+        <br><br> 
+        <article>
+          <!--Banner examples-->
+        <h1 class="banners">Banners</h1>  
+        <p>Theres so many things you can do with a banner. It can display a gallery of images
+        ,solid color, have a logo or have a button to redirect you to a different part of the page.
+        I'm going to show some example banners below and the code I used to create it.
+        <!--These are examples of different style banners-->
+          <banner>
+          <table width='100%' cellspacing=0 cellpadding=0>
+            <tr class="exone">
+            <td class="leftone"><p>This banner has an image</p></td>
+            <td class="rightone"><p>This banner is more transparent</p></td>
+            </tr>  
+            <tr class="code">
+              <td><p>Background-image: url();</p></td>
+              <td><p>
+                opacity: #;
+                </p></td>
+            </tr>
+            <tr>
+              <td class="lefttwo"><p>This banner has a shadow</p> </td>
+              <td class="righttwo"><p>This banner has a border</p></td>
+            </tr>
+            <tr class="code">
+              <td><p>Box-Shadow: offset-x offset-y blur-radius color;</p></td>
+              <td><p>
+                border: # style color;
+                border-radius: #;
+                </p></td>
+            </tr>
+          </table>
+          </banner>
+        </p>
+      </article>
+      <br>
+      <hr>
+      <br>
+      <article>
+        <!--examples of html inputs and css forms without much styling-->
+        <h1 class="forms">HTML Input Types and CSS Forms</h1>
+        <p>This concept was a little harder for me to grasp because theres so many different types of inputs and each are used 
+          in certain occasions. Theres actually a form being used in the Navigation bar called input type="search" and input 
+          type="submit".  
+        </p>
+        </article>
+    </section>
+    <br>    
+  <form> 
+    <section>
+      
+     <h1>Different Inputs</h1>
+        <label> This is a checkbox</label>
+        <input type="checkbox"> 
+      </section>
+          <br>
+      <section>
+        <label> This is a color selector</label>
+        <input type="color">
+      </section>
+          <br>
+      <section>
+          <div>
+            <p>This is the radio</p>
+            <input type="radio" id="you" name="radio" value="you">
+            <label for="radio">you can</label>
+          </div>
+          <div>
+             <input type="radio" id="only" name="radio" value="only">
+             <label for="radio">only select one</label>
+          </div>
+        </section>
+          <br>
+      <section>
+        <p>This is a slider its called range</p>
+            <input type="range" class="range">
+      </section>
+        </form>
+       
+
+
+     <!--This is the footer added a link that jumps to the start of the page -->
+  <footer>
+    <p><a href="#Cheat_Sheet">Jump To the Top</a></p>
+  </footer>
+
+</body>
+</html>
