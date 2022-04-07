@@ -2,6 +2,8 @@
 font-family: 'Major Mono Display', monospace;
 font-family: 'Monofett', cursive;*/
 
+/* Universal Styles =========
+============*/
 * {
     color: black;
     font-family: 'Cutive Mono', monospace;
@@ -17,7 +19,7 @@ nav {
     color: black;
     background-color: white;
 }
-    
+
 html {
      min-height: auto;
      max-height: 800px;
@@ -72,6 +74,7 @@ section {
      margin:0 auto;
      background-color: rgba(255, 255, 255, 0.1);
      text-align: center;
+     font-weight: lighter;
 }
  
 footer {
@@ -83,7 +86,11 @@ footer {
      background-color: whitesmoke;
      opacity: .8;
 }
-
+ hr {
+     opacity: .2;
+     width: 80%;
+     background-color: #999;
+ }
 .title {
     margin: 100px 0px;
 }
@@ -103,25 +110,8 @@ footer {
      box-shadow: 5px 5px 10px gray;
 }
 
-.search, .submit {
-     border-radius: 12px;
-     padding: 5px;
-     font-size: 12px;
-}
- 
-.submit {
-     border-style: none;
-     margin-left: 5px;
-     background-color: darkgrey;
-     color: white;
-     opacity: 0.7;
-     transition-duration: .4s;
-}
- 
-.submit:hover {
-     opacity: 1;
-} 
-
+/* CheatSheet example Styles===========
+=========*/
 .exone {
     align-content: center;
 }
@@ -152,6 +142,8 @@ footer {
     font-weight:bold;
 }
 
+/* buttons ==============
+=========== */
 #git_hub {
     border: none;
     padding: 20px;
@@ -171,11 +163,6 @@ footer {
     font-size: 90%;
 }
 
-#intro , #projects ,
-#about_me , #Cheat_Sheet{
-     line-height: 25px;
-}
-
 #buttonlink {
      text-decoration: none;
      color: black;
@@ -187,6 +174,38 @@ footer {
 #buttonlink:hover {
      font-size: 95%;
 }
+
+.search, .submit {
+     border-radius: 12px;
+     padding: 5px;
+     font-size: 12px;
+}
+.submit {
+     border-style: none;
+     margin-left: 5px;
+     background-color: darkgrey;
+     color: white;
+     opacity: 0.7;
+     transition-duration: .4s;
+}
+ 
+.submit:hover {
+     opacity: 1;
+} 
+
+/* page sections ============
+===========*/
+
+#intro , #projects ,
+#about_me , #Cheat_Sheet{
+     line-height: 25px;
+}
+
+#Cheat_Sheet {
+    position: relative;
+    top: 100px;
+}
+/* About me section and overlay*/
 
 #about_me {
     position: relative;
@@ -214,6 +233,7 @@ footer {
 
 .overlay:hover , #about_me:hover {
      opacity: 1;
+     cursor: pointer;
 }
 
 .text {
@@ -224,4 +244,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-  }
+}
+/* inputs =========
+======= */
+
+input[type=range]{
+
+}
+/* have to style the breadcrumb for sections on current page*/
