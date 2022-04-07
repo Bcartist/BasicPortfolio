@@ -2,11 +2,15 @@
 <html lang="en"> 
   <head>
     <title> Very Basic Portfolio </title> 
+    
     <link href="resources\index.css" type="text/css" rel="stylesheet">
+   
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Monofett&display=swap" rel="stylesheet">
-  </head>
+ 
+</head>
 
 
   <body> 
@@ -18,7 +22,7 @@
             <li><a href="#intro">Home</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#about_me">About Me</a></li>
-              <li><a href="#Cheat_Sheet">CheatSheet</a></li>
+              <li><a href="resources/cheatsheet.html">CheatSheet</a></li>
           <li><input class="search" type="text" placeholder="Search..."><input class="submit" type="submit"></li>
             </ul>
             <!--search bar is just decoration right now-->
@@ -34,15 +38,16 @@
     <p>I will be using this an a portfolio for what I have learned. I started my journey into the world of tech
         the beginning of 2022. In January , I learned <strong>very</strong> little html for four days. Feburary, I 
         stopped completely because my personal life was very hectic. It wasn't until Mid-March I decided to study 
-        everyday for at least an hour. I average around 15-25 hours a week of studying mainly html and css. <br><br> Granted,
-        as a kid I use to change my Tumblr layout with html and css, but it was mostly alot of copying and pasting.
+        everyday for at least an hour. 
     </p>
   </article>
   </section>
 
+  <hr>
   <!--This is going to be my project folder with examples-->
-  <section id="projects">
-    <h1>Projects</h1>
+
+  <section id="projects" >
+    <h1 >Projects</h1>
     <article>
       <div class="boxone">
         <img src="https://i.ibb.co/9rZSSJV/linktree-SC.png" alt="Image of Site" height="150"  class="projectone"> 
@@ -54,7 +59,7 @@
     </article>
   </section>
   
-
+<hr>
   <section id="about_me">
     <h1> This is Me </h1>
     <figure>
@@ -67,62 +72,7 @@
       </article> 
   </section>
 
-  <section id="Cheat_Sheet">
-      <h3>What I've Learned</h3>
-      <br><br> 
-      <article>
-      <h1>Banners</h1>  
-      <p>Theres so many things you can do with a banner. It can display a gallery of images
-      ,solid color, have a logo or have a button to redirect you to a different part of the page.
-      I'm going to show some example banners below and the code I used to create it.
-      <!--These are examples of different style banners-->
-        <banner>
-        <table width='100%' cellspacing=0 cellpadding=0>
-          <tr class="exone">
-          <td class="leftone"><p>This banner has an image</p></td>
-          <td class="rightone"><p>This banner is more transparent</p></td>
-          </tr>  
-          <tr class="code">
-            <td><p>Background-image: url();</p></td>
-            <td><p>
-              opacity: #;
-              </p></td>
-          </tr>
-          <tr>
-            <td class="lefttwo"><p>This banner has a shadow</p> </td>
-            <td class="righttwo"><p>This banner has a border</p></td>
-          </tr>
-          <tr class="code">
-            <td><p>Box-Shadow: offset-x offset-y blur-radius color;</p></td>
-            <td><p>
-              border: # style color;
-              border-radius: #;
-              </p></td>
-          </tr>
-        </table>
-        </banner>
-      </p>
-    </article>
-    <br><br>
-    <article>
-      <h1>HTML Input Types and CSS Forms</h1>
-      <p>This concept was a little harder for me to grasp because theres so many different types of inputs and each are used 
-        in certain occasions. Theres actually a form being used in the Navigation bar called input type="search" and input 
-        type="submit". 
-        <br>
-        <input type="checkbox"> 
-        <br>
-        <input type="color">
-        <br>
-        <input type="radio">
-        <br>
-        <input type="range">
-      </p>
-    </article>
-  </section>
-
-  <!--This is the footer added a link that jumps to the start of the page , it does not work porperly once 
-  I used position:sticky-->
+  <!--This is the footer added a link that jumps to the start of the page-->
   <footer>
     <p><a href="#intro">Jump To the Top</a></p>
   </footer>
